@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domina el ECG - La Guía Definitiva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f0f4f8;
+        }
+        .cta-button {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .icon-check {
+            color: #10B981; /* Un verde vibrante */
+        }
+        .ekg-line {
+             background-image: linear-gradient(to right, transparent 50%, #d1d5db 50%), linear-gradient(to bottom, transparent 50%, #d1d5db 50%);
+             background-size: 20px 20px;
+             height: 3px;
+             width: 100%;
+             position: relative;
+             overflow: hidden;
+        }
+        .ekg-pulse {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 100px;
+            transform: translateY(-50%);
+            border: solid #0d9488;
+            border-width: 0 0 3px 0;
+            background-color: transparent;
+            animation: ekg-pulse-animation 2s linear infinite;
+        }
+
+        @keyframes ekg-pulse-animation {
+            0% { transform: translateY(-50%) translateX(-100%);}
+            20% { clip-path: polygon(0 50%, 10% 50%, 12% 40%, 14% 60%, 16% 50%, 18% 55%, 20% 45%, 22% 50%, 100% 50%);}
+            80% { clip-path: polygon(0 50%, 80% 50%, 82% 40%, 84% 60%, 86% 50%, 88% 55%, 90% 45%, 92% 50%, 100% 50%);}
+            100% { transform: translateY(-50%) translateX(100%); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Sección del Héroe -->
+    <header class="hero-bg">
+        <div class="container mx-auto px-6 py-16 md:py-24 text-center">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight">¿El ECG te parece imposible? <br class="hidden md:block"> <span class="text-teal-600">Ya no más.</span></h1>
+            <div class="max-w-3xl mx-auto">
+                <p class="mt-6 text-lg md:text-xl text-gray-700">
+                    Sabemos lo frustrante que es enfrentarse a un electrocardiograma y sentirte perdido. Libros confusos, explicaciones demasiado técnicas y el miedo constante a pasar por alto algo crítico... <strong>¡Se acabó!</strong>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de la Solución -->
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-6">
+
+            <!-- Presentación de la Guía -->
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">La Guía Definitiva que Descomplica el ECG de una Vez por Todas</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    No solo te enseñamos la teoría, te entregamos un <strong>sistema</strong>. Te llevaremos de la mano desde los conceptos más fundamentales (qué significa realmente cada onda y segmento) hasta la interpretación de condiciones complejas como hipertrofias, agrandamientos y los temidos bloqueos de conducción.
+                </p>
+            </div>
+
+            <!-- El Cambio de Juego: El Método -->
+            <div class="mt-12 md:mt-16 bg-gray-50 rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
+                <div class="text-center">
+                    <span class="text-teal-600 font-semibold uppercase tracking-wider">El Verdadero Cambio de Juego</span>
+                    <h3 class="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">Nuestro Exclusivo Método de Lectura Sistemática en 9 Pasos</h3>
+                     <div class="ekg-line my-6 mx-auto max-w-sm">
+                        <div class="ekg-pulse"></div>
+                    </div>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-700">
+                        Olvídate de la improvisación. Este es un checklist práctico y a prueba de errores para analizar <strong>CUALQUIER</strong> trazado de forma ordenada, asegurando que nunca más omitas un detalle vital. Es la confianza que necesitas, convertida en un método.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sección "Un Vistazo al Interior" -->
+            <div class="mt-16 md:mt-24">
+                <div class="max-w-4xl mx-auto bg-teal-700 text-white rounded-2xl p-8 md:p-12 shadow-xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center text-white">Un Vistazo al Interior</h2>
+                    <p class="text-center mt-2 text-teal-200">Dentro de este ebook descubrirás:</p>
+                    <ul class="mt-8 space-y-5">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-teal-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg"><strong class="font-semibold text-white">El código del ECG, descifrado:</strong> Dominarás las ondas, segmentos e intervalos desde su origen, sentando una base que nada podrá derribar.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-teal-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg"><strong class="font-semibold text-white">El exclusivo Método de 9 Pasos:</strong> Nuestra joya de la corona. La fórmula exacta para interpretar un ECG con precisión y confianza, una y otra vez.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                               <svg class="h-6 w-6 text-teal-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg"><strong class="font-semibold text-white">Cómo detectar lo invisible:</strong> Aprenderás a identificar agrandamientos cardíacos y bloqueos de rama, esas patologías que a menudo se esconden a simple vista.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-teal-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg"><strong class="font-semibold text-white">Cálculos en segundos, no en minutos:</strong> Domina las técnicas más rápidas y efectivas para calcular la frecuencia cardíaca y el eje eléctrico.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-teal-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg"><strong class="font-semibold text-white">Humano vs. Máquina:</strong> Entenderás por fin cuándo confiar en la interpretación de la computadora y cuándo tu criterio es insustituible (una habilidad que te diferenciará).</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Llamada a la Acción (CTA) -->
+            <div class="mt-16 md:mt-24 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">¿Estás listo para interpretar cualquier ECG con total seguridad?</h3>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#comprar" class="cta-button w-full sm:w-auto bg-teal-600 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-teal-700">
+                        ¡Sí, Quiero el Método de 9 Pasos!
+                    </a>
+                    <a href="#comprar-secundario" class="cta-button w-full sm:w-auto bg-gray-800 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-gray-900">
+                        Desbloquear Mi Guía para Dominar el ECG
+                    </a>
+                </div>
+                 <p class="mt-6 text-sm text-gray-500">Compra segura. Acceso inmediato.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Tu Marca o Nombre. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Este sitio no es parte de Facebook ni de Meta. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca comercial de META, Inc.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
